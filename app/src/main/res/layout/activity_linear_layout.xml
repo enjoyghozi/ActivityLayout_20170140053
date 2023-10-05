@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_margin="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/bt_button1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Button 1"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_1"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+
+        <Button
+            android:id="@+id/bt_button2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Button 2"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_2"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_matchParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Button 2"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_match_parent"/>
+
+    <Button
+        android:id="@+id/bt_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="right"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_match_parent"
+        android:layout_gravity="right"
+        />
+    <Button
+        android:id="@+id/bt_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="left"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_match_parent"
+        android:layout_gravity="left"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@color/green"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your item"
+            android:layout_marginTop="20dp"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@color/green"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+    </LinearLayout>
+</LinearLayout>
